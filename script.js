@@ -315,3 +315,24 @@
           e.target.reset();
         }, 3000);
       }
+
+      // ─── ACTIVE NAV LINK ON SCROLL ──────────────────────────────────────────
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+const activateLink = () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+};
+
+window.addEventListener('scroll', activateLink);
+activateLink(); // run on load
