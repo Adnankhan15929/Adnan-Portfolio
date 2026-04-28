@@ -96,10 +96,10 @@
 
 // ─── TYPEWRITER ───────────────────────────────────────────────────────
 const roles = [
-  "Full Stack Developer",
-  "AI/ML Explorer",
-  "Building Smart Web Apps",
-  "DSA & Problem Solver",
+  "Aspiring Developer",
+  "Learning by Building",
+  "AI/ML Enthusiast",
+  "Problem Solver",
 ];
 let ri = 0,
   ci = 0,
