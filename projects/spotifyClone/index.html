@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Web Player. Music for everyone</title>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.png" />
+  </head>
+  <body>
+    <!-- <div class="navbar">
+      <i class="fa-brands fa-spotify fs-1"></i>
+      <div id="search" class="fs-4 searchb">
+        <i class="fa-regular fa-house"></i>
+        <div class="searchbar px-1">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="What do you want to play?" />
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+      <div class="lasticon">
+        <button class="btn btn-light me-3 btn-sm fw-bold">
+          Explore Premium
+        </button>
+        <button class="btn btn-dark me-3 btn-sm">
+          <i class="fa-solid fa-download bg-dark"></i>Install App
+        </button>
+        <i class="fa-solid fa-bell me-3 fs-5"></i>
+        <i class="fa-solid fa-user-group fs-5 me-3"></i>
+        <i class="bg-primary fs-5 a">A</i>
+      </div>
+      <div class="burger fs-3">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="d-flex main">
+      <div class="sidebar">
+        <div class="d-flex bg-transparent justify-content-between p-3">
+          <h6>Your Library</h6>
+          <div class="d-flex gap-3 align-items-center bg-transparent">
+            <button type="button" class="btn btn-dark btn-sm">+Create</button>
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+        <div class="d-flex bg-transparent gap-3 p-3">
+          <button class="btn btn-dark btn-sm">Playlist</button>
+          <button class="btn btn-dark btn-sm">Artist</button>
+          <button class="btn btn-dark btn-sm">Albums</button>
+        </div>
+        <div
+          class="d-flex bg-transparent justify-content-between lh-1 gap-3 p-3"
+        >
+          <i>/\</i>
+          <div><p>Recents/\</p></div>
+        </div>
+
+        <div>
+          <div id="f1" class="mt-3 position-absolute d-flex">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.C07dwCHH8WE3DNIlKBiKaQHaHU?pid=Api&P=0&h=180"
+              alt=""
+              class=""
+            />
+            <div class="text-white pt-4">
+              <h6>Ishqa Ve</h6>
+              <p class="text-secondary">
+                zeeshan Ali, zeeshan Ali, zeeshan Ali, zeeshan Ali
+              </p>
+            </div>
+          </div>
+          <div id="f1" class=" position-absolute bottom-0 d-flex">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.C07dwCHH8WE3DNIlKBiKaQHaHU?pid=Api&P=0&h=180"
+            alt=""
+            class="mt-2"
+          />
+          <div class="text-white pt-4">
+            <h6>Ishqa Ve</h6>
+            <p class="text-secondary">
+              zeeshan Ali, zeeshan Ali, zeeshan Ali, zeeshan Ali
+            </p>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+
+      <div class="container">main</div>
+    </div>
+
+    <div class="position-absolute footer" id="footer">
+      <div id="f1" class="mt-3">
+        <img
+          src="https://tse4.mm.bing.net/th/id/OIP.C07dwCHH8WE3DNIlKBiKaQHaHU?pid=Api&P=0&h=180"
+          alt=""
+          class="mt-2"
+        />
+        <div class="text-start text-white">
+          <h6>Ishqa Ve</h6>
+          <p class="text-secondary">
+            zeeshan Ali, zeeshan Ali, zeeshan Ali, zeeshan Ali
+          </p>
+        </div>
+        <i class="fa-solid fa-plus text-secondary"></i>
+      </div>
+
+      <div class="text-center mt-2" id="cen">
+        <div
+          class="d-flex align-items-center justify-content-center gap-4 fs-5"
+          id="icons"
+        >
+          <i class="fa-solid fa-shuffle text-secondary"></i>
+          <i class="fa-solid fa-angle-left"></i>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-angle-right"></i>
+          <i class="fa-solid fa-infinity text-secondary"></i>
+        </div>
+
+        <div class="d-flex gap-2 mt-2" id="cen2">
+          <p class="">0:00</p>
+          <input type="range" class="range" value="0" />
+          <p class="">3:25</p>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-cubes-stacked"></i>
+        <i class="fa-solid fa-computer"></i>
+        <i class="fa-thin fa-volume"></i>
+        <input type="range" value="0" />
+        <i class="fa-solid fa-minimize"></i>
+        <i class="fa-solid fa-expand"></i>
+      </div>
+    </div>-->
+
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home </a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Library</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="library_icon.png" alt="" /> <a href="#">Your Library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i
+              ><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy, we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+            <div class="box">
+              <p class="box-p1">Let's find some padcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="backward_icon.png" alt="" />
+            <img src="forward_icon.png" alt="" class="hide" />
+          </div>
+          <div class="sticky-nav-options">
+            <button class="badge nav-items hide">Explore Premium</button>
+            <button class="badge nav-items dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right: 5px"></i
+              >Install Apps
+            </button>
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+
+        <h2>Recently played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="card1img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+        </div>
+
+        <h2>Trending now near you</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="card2img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+          <div class="card">
+            <img src="card3img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+          <div class="card">
+            <img src="card4img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+          <div class="card">
+            <img src="card2img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+          <div class="card">
+            <img src="card1img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+        </div>
+
+        <h2>Featured Charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="card1img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+          <div class="card">
+            <img src="card6img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+          <div class="card">
+            <img src="card5img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="music-player">
+        <div class="album">
+          <div id="f1">
+            <img
+              src="card4img.jpeg"
+              alt=""
+            />
+            <div >
+              <h6>Ishqa Ve</h6>
+              <p >
+                zeeshan Ali, zeeshan Ali, zeeshan Ali, zeeshan Ali
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="player">
+          <div class="player-controls">
+            <img src="player_icon1.png" alt="" class="player-control-icon" />
+            <img src="player_icon2.png" alt="" class="player-control-icon" />
+            <img
+              src="player_icon3.png"
+              alt=""
+              class="player-control-icon"
+              style="opacity: 1; height: 2rem"
+            />
+            <img src="player_icon4.png" alt="" class="player-control-icon" />
+            <img src="player_icon5.png" alt="" class="player-control-icon" />
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">00:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="progress-bar"
+              step="1"
+            />
+            <span class="tot-time">03:33</span>
+          </div>
+        </div>
+        <div class="f3">
+          <div >
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-cubes-stacked"></i>
+            <i class="fa-solid fa-computer"></i>
+            <i class="fa-thin fa-volume"></i>
+            <input type="range" value="0" min="0" max="100" class="range-end"/>
+            <i class="fa-solid fa-minimize"></i>
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
