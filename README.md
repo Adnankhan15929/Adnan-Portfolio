@@ -1,7 +1,6 @@
-[README (1).md](https://github.com/user-attachments/files/27257213/README.1.md)
+
 <div align="center">
 
-<img src="https://adnan-portfolio-orpin.vercel.app/MyImage.jpeg" width="150" height="150" style="border-radius: 50%;" alt="Adnan Khan" />
 
 ```
     _         _                        _  __ _                   
